@@ -39,25 +39,25 @@ void main() {
 
   int aa = 10;
   List myList = [10, 20, 30, 40, 50, 60, 70];
-  print(myList[3]);
-  print(myList.first);
-  print(myList.last);
-  print(myList.elementAt(3));
-  print(myList.length);
-  print(myList.isEmpty);
-  print(myList.isNotEmpty);
+  // print(myList[3]);
+  // print(myList.first);
+  // print(myList.last);
+  // print(myList.elementAt(3));
+  // print(myList.length);
+  // print(myList.isEmpty);
+  // print(myList.isNotEmpty);
 
-  myList[3] = 80;
-  print(myList);
+  // myList[3] = 80;
+  // print(myList);
   // myList.add(300);
   // myList.addAll([300, 301, 302, 303]);
-  myList.insert(2, 400);
-  myList.insertAll(3, [400, 401, 402, 403]);
-  print(myList);
-  myList.sort();
-  print(myList);
-  myList.replaceRange(2, 3, [600, 601, 602, 603]);
-  print(myList);
+  // myList.insert(2, 400);
+  // myList.insertAll(3, [400, 401, 402, 403]);
+  // print(myList);
+  // myList.sort();
+  // print(myList);
+  // myList.replaceRange(2, 3, [600, 601, 602, 603]);
+  // print(myList);
 
   // myList.remove(400); // BY VALUE
   // myList.removeAt(2); // BY INDEX
@@ -87,4 +87,70 @@ void main() {
   // print(b); // -4 | 30 | 9 | 16 | 49
   // print(a + b); // 9 | 49 | 10
   // print(c); // 50 | 30
+
+  Map student1 = {
+    "name": "Codewithowais",
+    "age": '22',
+    'address': 'abc',
+    'rollNo': "RN0001",
+  };
+  // print(student1['name']);
+  // print(student1.keys);
+  // print(student1.values);
+  // print(student1.length);
+  // print(student1.containsKey('name'));
+  // print(student1.containsValue('codewithowais'));
+
+  // student1.addAll({"phone number": '03000000', 'email': 'abc@gmail.com'});
+  // student1.putIfAbsent('fav fruit', () => 'Mango');
+  // print(student1);
+  // student1['name'] = 'codewithABS';
+  // print(student1);
+  // student1.update('name', (value) => 'ahmed');
+  // print(student1);
+
+  // student1.remove('name');
+  // student1.clear();
+
+  // List ls1 = ["name", 'address'];
+  // List ls2 = ['codewithowais', 'abc'];
+  // Map newObj1 = Map.fromIterables(ls1, ls2);
+  // print(newObj1);
+
+  // .. => Cascade operator
+  // ... => Spread operator
+
+  Map obj1 = {'name': 'codewithowais'};
+  Map obj2 = {'address': 'abc'};
+  Map obj3 = {'number': '0300000000'};
+  Map obj4 = {...obj1, ...obj2, ...obj3};
+  // print(obj4);
+
+  // obj4.addAll(obj1);
+  // obj4.addAll(obj1);
+  // obj4.addAll(obj1);
+  // obj4.addAll(obj1);
+
+  Map obj5 = {}
+    ..addAll(obj1)
+    ..addAll(obj2)
+    ..addAll(obj3)
+    ..remove('name');
+
+  List ls1 = [];
+  List ls2 = [];
+  List ls3 = [];
+  List ls4 = [...ls1, ...ls2, ...ls3];
+
+  // INC & DEC
+  // PRE INC => 1 + val
+  // POST INC => val + 1
+  // PRE DEC => 1 - val
+  // POST DEC => val - 1
+
+  int num1 = 10;
+  print(num1++);
+  print(++num1);
+  print(--num1);
+  print(num1--);
 }
