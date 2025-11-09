@@ -1,3 +1,5 @@
+import 'dart:io';
+
 void main() {
   // print(5 > 8);
   // print(5 > 2);
@@ -39,25 +41,25 @@ void main() {
 
   int aa = 10;
   List myList = [10, 20, 30, 40, 50, 60, 70];
-  // print(myList[3]);
-  // print(myList.first);
-  // print(myList.last);
-  // print(myList.elementAt(3));
-  // print(myList.length);
-  // print(myList.isEmpty);
-  // print(myList.isNotEmpty);
+  print(myList[3]);
+  print(myList.first);
+  print(myList.last);
+  print(myList.elementAt(3));
+  print(myList.length);
+  print(myList.isEmpty);
+  print(myList.isNotEmpty);
 
-  // myList[3] = 80;
-  // print(myList);
+  myList[3] = 80;
+  print(myList);
   // myList.add(300);
   // myList.addAll([300, 301, 302, 303]);
-  // myList.insert(2, 400);
-  // myList.insertAll(3, [400, 401, 402, 403]);
-  // print(myList);
-  // myList.sort();
-  // print(myList);
-  // myList.replaceRange(2, 3, [600, 601, 602, 603]);
-  // print(myList);
+  myList.insert(2, 400);
+  myList.insertAll(3, [400, 401, 402, 403]);
+  print(myList);
+  myList.sort();
+  print(myList);
+  myList.replaceRange(2, 3, [600, 601, 602, 603]);
+  print(myList);
 
   // myList.remove(400); // BY VALUE
   // myList.removeAt(2); // BY INDEX
@@ -87,6 +89,14 @@ void main() {
   // print(b); // -4 | 30 | 9 | 16 | 49
   // print(a + b); // 9 | 49 | 10
   // print(c); // 50 | 30
+
+  stdout.write("Please enter your name?");
+  var name = stdin.readLineSync();
+  print(name);
+  List<String> names = ["Owais", "ahmed"];
+  names.add('23');
+  List<dynamic> names1 = ["Owais", "ahmed"];
+  names.add('23');
 
   Map student1 = {
     "name": "Codewithowais",
